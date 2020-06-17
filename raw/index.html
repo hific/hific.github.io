@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <meta charset="utf-8">
+  <title>Image Comparison</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    body {
+      background-color: #ddd;
+      color: #555;
+      font-family: 'helvetica', sans-serif;
+      margin: 0;
+      min-width: 320px;
+      padding: 0;
+      position: relative;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      margin: 0;
+      position: relative;
+      max-width: none;
+      overflow: auto;
+      width: auto;
+    }
+    .container .inner {
+      background-color: #eee;
+      box-sizing: border-box;
+      margin: 40px auto;
+      max-width: 960px;
+      overflow: auto;
+      padding: 20px 30px 30px 20px;
+      position: relative;
+      width: auto;
+    }
+    p {
+    padding-bottom: 30px;
+    }
+    a {
+      text-decoration: underline;
+      display: block;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="./site/script.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <h1 id="main-title">HiFiC Visual Results</h1>
+        <p>The following page contains the 20 images from CLIC2020 used for the user study, compressed with each of the 9 methods used in the study.
+        <a href="https://storage.googleapis.com/hific/userstudy/visualize.html?perPage=1">Userstudy Comparison</a>
+        </p>
+        <p> The following pages contain all the images of the respective datasets, compressed with
+        <em>HiFiC<sup>Hi</sup></em>,
+        <em>HiFiC<sup>Mi</sup></em>, and
+        <em>HiFiC<sup>Lo</sup></em>.
+        <a href="https://storage.googleapis.com/hific/kodak/visualize.html?perPage=25">Kodak</a>
+        <a href="https://storage.googleapis.com/hific/clic2020/visualize.html?perPage=10">CLIC2020</a>
+        <a href="https://storage.googleapis.com/hific/div2k/visualize.html?perPage=10">DIV2K</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
