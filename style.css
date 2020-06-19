@@ -8,55 +8,43 @@ body {
     padding: 0;
     min-width: 320px;
 }
-
+a { font-weight: 500; }
 /* Fix weird flickering in Safari */
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-    /* Non-prefixed version, currently
-                                     supported by Chrome, Edge, Opera and Firefox */
 }
-
 h1 {
     font-weight: bold;
     color: #333;
     margin: 0;
 }
-
 .title {
     text-align: center;
     width: 90%;
     margin: auto auto 20px;
 }
-
 .tagline {
     text-align: center;
     font-style: italic;
 }
-
 .inline-footnote {
     margin: auto;
     display: none;
 }
-
 .title h1 {
     margin-bottom: 20px;
 }
-
 .title p {
     margin-bottom: 1px;
 }
-
 h2 {
     font-weight: lighter;
     color: #555555;
 }
-
-
 .split {
     display: -webkit-box;
     display: flex;
@@ -66,20 +54,15 @@ h2 {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: strech;
-    align-items: strech;
+    -webkit-box-align: stretch;
+    align-items: stretch;
 }
-
 .split p {
     flex-basis: 100%;
 }
-
 @media screen and (min-width: 767px) {
-    .split p {
-        flex-basis: 48%;
-    }
+    .split p { flex-basis: 48%; }
 }
-
 .right-selector {
     position: absolute;
     top: 10px;
@@ -87,44 +70,33 @@ h2 {
     color: white;
     text-align: center;
 }
-
 .btn.disabled-button:disabled {
     background-color: #171a1d;
     opacity: 100%;
 }
-
 .btn.disabled-button.highlighted:disabled {
     border: 2px white solid;
 }
-
 .codec-info {
     font-size: 90%;
     font-style: italic;
 }
-
-a {
-    font-weight: 500;
-}
-
 .left-selector {
     position: absolute;
     top: 10px;
     left: 10px;
 }
-
 .img-info {
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
-
 .bpp-bytes-sel {
     position: absolute;
     bottom: 10px;
     left: 10px;
     font-size: 9pt;
 }
-
 .full-res-wrapper {
     position: absolute;
     right: 10px;
@@ -132,7 +104,6 @@ a {
     font-size: 9pt;
     text-align: right;
 }
-
 .overlay-box {
     border: 1px solid white;
     position: absolute;
@@ -144,14 +115,11 @@ a {
     left: 30px;
     background-color: black;
 }
-
-
 .page-container {
     position: relative;
     width: 100%;
     margin: 50px 0;
 }
-
 .page-container .inner {
     position: relative;
     width: 100%;
@@ -162,14 +130,12 @@ a {
     padding: 20px 30px;
     background-color: #EEE;
 }
-
 .outlined {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
     background-color: white;
 }
-
 .comparison-slider-wrapper .comparison-slider {
     position: relative;
     width: 100%;
@@ -177,13 +143,11 @@ a {
     border: 5px white solid;
     box-sizing: border-box;
 }
-
 .comparison-slider-wrapper .comparison-slider #right-imgs > img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .comparison-slider-wrapper .comparison-slider .resize {
     position: absolute;
     top: 0;
@@ -192,11 +156,9 @@ a {
     width: 50%;
     overflow: hidden;
 }
-
 .comparison-slider-wrapper .comparison-slider .resize > img {
     display: block;
 }
-
 .comparison-slider-wrapper .comparison-slider .divider {
     position: absolute;
     width: 2px;
@@ -208,7 +170,6 @@ a {
     margin-left: -1px;
     cursor: ew-resize;
 }
-
 .comparison-slider-wrapper .comparison-slider .divider:before {
     content: "";
     position: absolute;
@@ -223,7 +184,6 @@ a {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-
 .comparison-slider-wrapper .comparison-slider .divider:after {
     content: "";
     position: absolute;
@@ -238,7 +198,6 @@ a {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-
 .tall{
     background-color: #f0f0f0;
     width: 100%;
@@ -251,7 +210,6 @@ a {
     left: -14px;
     margin-top: -15px;
 }
-
 .comparison-slider-wrapper .comparison-slider .divider.draggable:after {
     width: 20px;
     height: 20px;
@@ -259,7 +217,6 @@ a {
     margin-top: -10px;
     background-color: #555;
 }
-
 .outlined .caption {
     position: relative;
     width: 100%;
@@ -267,12 +224,10 @@ a {
     box-sizing: border-box;
     font-style: italic;
 }
-
 .img-figure {
     width: 98%;
     margin: 20px;
 }
-
 .image-selector {
     margin: auto;
     display: table;
@@ -286,48 +241,35 @@ a {
         display: block;
     }
 }
-
 .thumb {
     width: 50px;
     margin: 5px 0px;
     border: white solid 2px;
     cursor: pointer;
 }
-
 .thumb-active {
     border: #333 solid 2px;
 }
-
 .centered-info {
     text-align: center;
 }
-.social-icons {
-    margin-bottom: 30px;
-    margin: auto;
-}
-.social-icon-wrapper {
-    display: inline-block;
-    margin: auto;
-}
 .social-icon {
-    width: 16%;
+    width: 75%;
 }
-.social-icon-title {
+.social-icons {
+    margin: auto;
 }
-
+.social-icon-left { padding-left: 25%; }
+.social-icon-right { padding-right: 25%; }
 .paperthumbs .col-sm {
     margin: 3px;
 }
-
 .paperthumbs p {
     margin-bottom: 0px;
 }
-
 .paperthumbs h4 {
     margin-top: 20px;
-
 }
-
 .citation {
     font-size: 10pt;
 }

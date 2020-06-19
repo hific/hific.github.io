@@ -58,14 +58,259 @@
         </div>
         <p class="tagline">Awesome image compression at lower bitrates than ever before!</p>
 
-        <div class="centered-info">
-            <h2>Under Construction</h2>
+        <div class="alert alert-warning smartphone-alert" role="alert">
+            Best viewed on a big screen.
+        </div>
 
-            <strong> Page Coming very soon! Stay tuned!</strong>
+        <div class="comparison-slider-wrapper outlined">
+            <div class="image-selector">
+                <!-- JS-generated -->
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+            </div>
+            <div class="comparison-slider noselect">
+                <div id="loading-placeholder" class="tall"></div>
+                <div id="right-imgs" showing="loading">
+                    <img src="https://storage.googleapis.com/hific/data/img/shades_jpg_1x_0.209.jpg" alt="right1">
+                </div>
+                <div class="right-selector">
+                    <div class="btn-group-vertical" role="group">
+                    <!-- JS-generated -->
+                    <button type="button" class="btn btn-dark btn-block active">JPG</button>
+                    </div>
+                </div>
+                <div class="resize noselect">
+                    <img src="https://storage.googleapis.com/hific/data/img/shades_HiFiC_Lo.png" id="left">
+                </div>
+                <div class="left-selector">
+                    <div class="btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-dark btn-block disabled-button highlighted" id="left-info-button" disabled>HiFiC (Ours)</button>
+                    </div>
+                </div>
+                <div class="img-info">
+                    <div class="btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-sm btn-dark btn-block disabled-button" id="img-info-button" disabled>CLIC2020</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div>
+                <div class="row no-gutters">
+                    <div class="col-3">
+                        <div class="bpp-bytes-sel">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="bpp-bytes-radio" id="bytes" value="bytes" checked>
+                                <label class="form-check-label" for="bytes">
+                                    Kilobyte (kB)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="bpp-bytes-radio" id="bpp" value="bpp">
+                                <label class="form-check-label" for="bpp">
+                                    Bits per pixel (bpp)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="image-selector">
+                            <!-- JS-generated -->
+                        </div>
+                    </div>
+                    <div class="col-3 full-res-wrapper">
+                        <a target="_blank" href="#" id="view-full-res" data-title="Shows the image 1:1, instead of fit to the window size.">
+                            View Full Res</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-md centered-info paperthumbs">
+            <h2>Paper</h2>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-0.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-1.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-2.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-3.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-4.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-5.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-6.jpg" class="img-fluid"/></a></div>
+                    <div class="col-sm"><a target="_blank" href="https://arxiv.org/pdf/2006.09965">
+                        <img src="paper_thumbs/output-7.jpg" class="img-fluid"/></a></div>
+                </div>
+            </div>
+            <p>
+                <a href="https://arxiv.org/abs/2006.09965">
+                    PDF including supplementary material available on arXiv</a>
+            </p>
+            <h4>Visual Supplementary</h4>
+            <p>The PDF on arxiv includes the supplementary materials with more information.
+            </p>
+            <p><a target="_blank" href="https://storage.googleapis.com/hific/data/appendixb/appendixb.pdf">
+                Additional visual results are hosted as a PDF here.</a></p>
+            <h4>Evalutation Images</h4>
+            <p>We evaluate our method on CLIC2020, DIV2K, and Kodak.</p>
+            <p><a target="_blank" href="raw/index.html">
+                Reconstructions of HiFiC on all these datasets can be found here.</a></p>
+        </div>
+        <hr/>
+        <div class="container-md">
+            <h2>About</h2>
+            <p>We combine Generative Adversarial Networks with learned compression to obtain a state-of-the-art generative lossy compression system.
+                In the paper, we investigate normalization layers, generator and discriminator architectures, training strategies, as well as perceptual losses.
+                In a user study, we show that our method is <strong>preferred to previous state-of-the-art approaches even if they use more than 2&times; the bitrate.</strong>
+            </p>
+            <h2>User Study</h2>
+            <div class="outlined">
+                <div class="caption">
+                    <p>
+                        The following shows
+                        normalized scores for the user study, compared to perceptual metrics,
+                        where <strong>lower is better</strong> for all.
+                    </p>
+                    <p>
+                        <strong>HiFiC</strong> is our method.
+                        <a href="http://papers.nips.cc/paper/8275-joint-autoregressive-and-hierarchical-priors-for-learned-image-compression.pdf">
+                            M&amp;S</a> is the deep-learning based <em>Mean &amp; Scale Hyperprior</em>,
+                        from Minnen et al.,
+                        optimized for mean squared error.
+                        <a href="https://en.wikipedia.org/wiki/Better_Portable_Graphics">BPG</a> is a non-learned codec based on H.265 that achieves
+                        very high PSNR.
+                        <strong>No GAN</strong> is our baseline, using the same architecture and distortion
+                        as HiFiC, but no GAN.
+                        Below each method, we show <em>average</em> bits per pixel (bpp) on the
+                        <a target="_blank" href="https://storage.googleapis.com/hific/userstudy/visualize.html?perPage=1">
+                            images from the user study</a>,
+                        and for learned methods we show the loss components.
+                    </p>
+                    <img src="img_other/userstudy.png" class="img-figure rounded mx-auto d-block">
+                    <p>
+                        The study shows that training with a GAN yields reconstructions that outperform BPG at practical
+                        bitrates, for high-resolution images.
+                        Our model at 0.237bpp is preferred to
+                        BPG even if BPG uses 2.1&times; the bitrate, and to
+                        MSE optimized models even if they use 1.7&times; the bitrate.
+                    </p>
+                </div>
+            </div>
+            <h2>Code</h2>
+            <p>Trained model and TensorFlow code <strong>coming soon!</strong></p>
+            <h2>Citation</h2>
+            <div class="citation">
+                <pre>
+@inproceedings{mentzer2020hific,
+  title={High-Fidelity Generative Image Compression},
+  author={Fabian Mentzer and George Toderici and Michael Tschannen and Eirikur Agustsson},
+  year={2020}
+}
+                </pre>
+            </div>
             <hr/>
-
+            <div class="centered-info">
+                <div class="container-xs social-icons">
+                    <div class="row">
+                        <div class="col-sm-3">Fabian Mentzer
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a href="mailto:%6D%65%6E%74%7A%65%72%66@%76%69%73%69%6F%6E.%65%65.%65%74%68%7A.%63%68">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-left">
+                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://twitter.com/mentzer_f">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-right">
+                                            <path fill="currentColor"
+                                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                  class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-sm-3">George Toderici
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a href="mailto:%67%74%6F%64%65%72%69%63%69@%67%6F%6F%67%6C%65.%63%6F%6D">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-left">
+                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://twitter.com/george_toderici">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-right">
+                                            <path fill="currentColor"
+                                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                  class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                          <div class="col-sm-3">Michael Tschannen
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a href="mailto:%6D%69.%74%73%63%68%61%6E%6E%65%6E@%67%6D%61%69%6C.%63%6F%6D">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-left">
+                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://twitter.com/mtschannen">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-right">
+                                            <path fill="currentColor"
+                                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                  class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                          <div class="col-sm-3">Eirikur Agustsson
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <a href="mailto:%65%69%72%69%6B%75%72@%67%6F%6F%67%6C%65.%63%6F%6D">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-left">
+                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://twitter.com/etagust">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icon social-icon-right">
+                                            <path fill="currentColor"
+                                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                  class=""></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
 </body>
 </html>
