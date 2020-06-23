@@ -130,11 +130,30 @@ let known = {
     ],
     'thumb': 'wall_thumb.jpg'
 },
+'kodim15': {
+    'imginfo': 'Kodak/kodim15.png',
+    'fullres': 'https://storage.googleapis.com/hific/kodak/visualize.html?perPage=10&imgs=kodim15',
+    'loadingRatio': '66.66666666666666%',
+    'left': ['kodim15_HiFiC_Lo.png', 'HiFiC (Ours): 0.139bpp', 'HiFiC (Ours): 7 kB'],
+    'right': [
+        ['kodim15_jpg_1x_0.166.jpg', 'JPG (0.166 bpp, \u22481x ours kB)', 'JPG (8 kB, \u22481x ours kB)'],
+        ['kodim15_jpg_2x_0.284.jpg', 'JPG (0.284 bpp, \u22482x)', 'JPG (14 kB, \u22482x)'],
+        ['kodim15_jpg_3x_0.424.jpg', 'JPG (0.424 bpp, \u22483x)', 'JPG (21 kB, \u22483x)'],
+        ['kodim15_jpg_4x_0.563.jpg', 'JPG (0.563 bpp, \u22484x)', 'JPG (28 kB, \u22484x)'],
+        ['DIVIDER'],
+        ['kodim15_bpg_1x_0.162.png', 'BPG (0.162 bpp, \u22481x)', 'BPG (8 kB, \u22481x)'],
+        ['kodim15_bpg_2x_0.313.png', 'BPG (0.313 bpp, \u22482x)', 'BPG (15 kB, \u22482x)'],
+        ['kodim15_bpg_3x_0.423.png', 'BPG (0.423 bpp, \u22483x)', 'BPG (21 kB, \u22483x)'],
+        ['DIVIDER'],
+        ['kodim15_originals.png', 'Original', 'Original'],
+    ],
+    'thumb': 'kodim15_thumb.jpg'
+},
 };
 /// INPUT_DATA_END
 
 let PREFIX = 'https://storage.googleapis.com/hific/data/img/';
-let order = ['shades', 'tower', 'wall', 'food', 'bus', 'plant', 'paris'];
+let order = ['shades', 'kodim15', 'tower', 'wall', 'food', 'bus', 'paris'];
 let captionTypeToIndex = {'bpp': 1, 'bytes': 2};
 let captionIndex = captionTypeToIndex['bytes'];
 let currentImage = null;
