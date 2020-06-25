@@ -349,11 +349,15 @@ function showImgAndUpdateUI(imgName, force) {
     showLeftImg(imgs['left'], imgs['imginfo'], imgs['fullres'], imgs['loadingRatio']);
     showRights(imgName, right, force);
 }
+
+
 function drags(dragElement, resizeElement, container) {
     let touched = false;
     window.addEventListener('touchstart', function () { touched = true; });
     window.addEventListener('touchend', function ()   { touched = false; });
+    let dividerInfo = $('.divider-info');
     dragElement.on("mousedown touchstart", function (e) {
+        dividerInfo.hide();
         dragElement.addClass("draggable");
         resizeElement.addClass("resizable");
         let startX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
