@@ -45,15 +45,18 @@
             <div class="container-sm">
                 <div class="row justify-content-md-center">
                     <div class="col-sm-auto">
-                        <p>Fabian Mentzer</p>
-                        <p>ETH Zurich<a href="#" id="toggle-aff-footnote">&midast;</a></p></div>
+                        <p>Fabian Mentzer<a href="#" id="toggle-aff-fa-footnote">&midast;</a></p>
+                        <p>ETH Zurich</p></div>
                     <div class="col-sm-auto"><p>George Toderici</p><p>Google Research</p></div>
-                    <div class="col-sm-auto"><p>Michael Tschannen</p><p>Google Research</p></div>
+                    <div class="col-sm-auto"><p>Michael Tschannen<a href="#" id="toggle-aff-mi-footnote"><sup>&ddagger;</sup></a></p><p></p></div>
                     <div class="col-sm-auto"><p>Eirikur Agustsson</p><p>Google Research</p></div>
                 </div>
             </div>
-            <div class="inline-footnote card card-body" id="footnote-aff">
-                &midast;Work done while interning at Google.
+            <div class="inline-footnote card card-body" id="footnote-aff-fa">
+                &midast;Work done while interning at Google Research.
+            </div>
+            <div class="inline-footnote card card-body" id="footnote-aff-mi">
+                <sup>&ddagger;</sup>Work done while at Google Research.
             </div>
         </div>
 
@@ -93,7 +96,7 @@
             <div class="comparison-slider noselect">
                 <div id="loading-placeholder" class="tall"></div>
                 <div id="right-imgs" showing="loading">
-                    <img src="https://storage.googleapis.com/hific/data/img/shades_jpg_1x_0.209.jpg" alt="right1">
+                    <!-- JS-generated img tag here -->
                 </div>
                 <div class="right-selector">
                     <div class="btn-group-vertical" role="group">
@@ -101,8 +104,8 @@
                     <button type="button" class="btn btn-dark btn-block active">JPG</button>
                     </div>
                 </div>
-                <div class="resize noselect">
-                    <img src="https://storage.googleapis.com/hific/data/img/shades_HiFiC_Lo.png" id="left">
+                <div class="resize noselect" id="left-img">
+                    <!-- JS-generated img tag with id "left" here -->
                 </div>
                 <div class="left-selector">
                     <div class="btn-group-vertical" role="group">
@@ -115,7 +118,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="divider-info">Drag Slider to Compare</div>
+                <div class="divider-info">Loading...</div>
             </div>
             <div>
                 <div class="row no-gutters">
@@ -138,6 +141,13 @@
                     <div class="col-6">
                         <div class="image-selector">
                             <!-- JS-generated -->
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
+                            <img class="thumb" src="https://storage.googleapis.com/hific/data/img/thumb_loading.png"/>
                         </div>
                     </div>
                     <div class="col-3 full-res-wrapper">
@@ -149,6 +159,7 @@
         </div>
         <div class="container-md centered-info paperthumbs">
             <h2>Paper</h2>
+            <emph><p class="conference-name">NeurIPS 2020</p></emph>
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-sm"><a target="_blank" href="https://arxiv.org/abs/2006.09965">
@@ -220,15 +231,26 @@
                     </p>
                 </div>
             </div>
+            <hr/>
             <h2>Code</h2>
-            <p>Trained model and TensorFlow code <strong>coming soon!</strong></p>
+            <p>Training code, code to evaluate on our models, and more details are available as part of the TensorFlow Compression repo at
+                <a target="_blank" href="https://github.com/tensorflow/compression/tree/master/models/hific">
+                    TFC/models/hific</a>.</p>
+            <p>
+                Explore our models on your own images with <strong>Colab</strong>!
+                <a target="_blank" href="https://colab.research.google.com/github/tensorflow/compression/blob/master/models/hific/colab.ipynb" rel="nofollow">
+                    <img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" align="center" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" style="max-width:100%;">
+                </a>
+            </p>
+            <hr/>
             <h2>Citation</h2>
             <div class="citation">
                 <pre>
 @article{mentzer2020high,
   title={High-Fidelity Generative Image Compression},
-  author={Mentzer, Fabian and Toderici, George and Tschannen, Michael and Agustsson, Eirikur},
-  journal={arXiv preprint arXiv:2006.09965},
+  author={Mentzer, Fabian and Toderici, George D and Tschannen, Michael and Agustsson, Eirikur},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
   year={2020}
 }
                 </pre>

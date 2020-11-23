@@ -163,8 +163,13 @@ $(document).ready(function () {
         captionIndex = captionTypeToIndex[this.value];
         showImgAndUpdateUI(currentImage, true);
     });
-    $('#toggle-aff-footnote').on('click', function (e) {
-        $('#footnote-aff').toggle();
+    $('#toggle-aff-fa-footnote').on('click', function (e) {
+        $('#footnote-aff-fa').toggle();
+        $('#footnote-aff-mi').hide();
+    });
+    $('#toggle-aff-mi-footnote').on('click', function (e) {
+        $('#footnote-aff-mi').toggle();
+        $('#footnote-aff-fa').hide();
     });
     $("#view-full-res").hover(
         function() {
@@ -177,6 +182,10 @@ $(document).ready(function () {
             $(document).find("div.overlay-box").remove();
         }
     );
+    // Add the img tags.
+    $("#right-imgs").append($("<img>"));
+    $("#left-img").append($("<img>", {"id": "left"}));
+    // Setup slider and load first image.
     if ($(".comparison-slider")[0]) {
         let compSlider = $(".comparison-slider");
         compSlider.each(function () {
@@ -214,7 +223,12 @@ $(document).ready(function () {
     }
 });
 
+function showDividerInfo() {
+    $('.divider-info').text('Drag Slider to Compare');
+}
+
 function showLeftImg(img, imgInfo, fullres, loadingRatio) {
+    console.log('Showing left', img[0]);
     let imgName = img[0];
     let img_caption = img[captionIndex];
     $('#left-info-button').text(img_caption);
@@ -222,24 +236,32 @@ function showLeftImg(img, imgInfo, fullres, loadingRatio) {
     $('#view-full-res').attr('href', fullres);
     let leftImg = $('#left')[0];
     let showing = leftImg.src.split('/').reverse()[0];
+    let loadingPlaceholder = $('#loading-placeholder');
     if (showing === imgName) {
         console.log('Left already on', imgName);
+        loadingPlaceholder.css('display', 'none');
+        showDividerInfo();
         return;
     }
     leftImg.src = PREFIX + imgName;
     if (leftImg.complete) {
+        console.log('Loaded image immediately.');
+        loadingPlaceholder.css('display', 'none');
+        showDividerInfo();
         return;
     }
     let rightImgs = $('#right-imgs'); rightImgs.hide();
     $(leftImg).hide();
-    let loadingPlaceholder = $('#loading-placeholder');
     loadingPlaceholder.css('display', 'block');
     loadingPlaceholder.css('padding-top', loadingRatio);
     function loaded() {
+        console.log('Loaded image!');
         $(leftImg).show();
         rightImgs.show();
         loadingPlaceholder.css('display', 'none');
+        loadingPlaceholder.css('padding-top', '0px');
         removeListeners();
+        showDividerInfo();
     }
     function error() { console.log('Error when loading', newLeft); removeListeners(); }
     function removeListeners() {
