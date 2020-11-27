@@ -22,6 +22,33 @@ h1 {
     color: #333;
     margin: 0;
 }
+h2 {
+    font-weight: normal;
+    color: #555555;
+}
+h3 {
+    font-weight: lighter;
+    color: #555555;
+}
+h4 {
+    font-weight: lighter;
+    color: #555555;
+}
+.eval-imgs {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+}
+.eval-imgs img {
+    display: inline;
+    vertical-align: top;
+    float: none;
+    width: 30px;
+    padding: 1px;
+}
+.eval-imgs-first {
+    margin-left: -15px;
+}
 .title {
     text-align: center;
     width: 90%;
@@ -40,18 +67,7 @@ h1 {
 .title p {
     margin-bottom: 1px;
 }
-h2 {
-    font-weight: lighter;
-    color: #555555;
-}
-h3 {
-    font-weight: lighter;
-    color: #555555;
-}
-h4 {
-    font-weight: lighter;
-    color: #555555;
-}
+
 .split {
     display: -webkit-box;
     display: flex;
