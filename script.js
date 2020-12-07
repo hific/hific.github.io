@@ -187,6 +187,7 @@ $(document).ready(function () {
     $("#left-img").append($("<img>", {"id": "left"}));
     // Setup slider and load first image.
     if ($(".comparison-slider")[0]) {
+        let firstImageIndex = Math.floor(Math.random() * order.length)
         let compSlider = $(".comparison-slider");
         compSlider.each(function () {
             let compSliderWidth = $(this).width() + "px";
@@ -203,7 +204,7 @@ $(document).ready(function () {
             let img =
                 $('<img>', {
                     'id': "img-sel-" + index.toString(),
-                    'class': "thumb" + (index === 0 ? " thumb-active" : "") + " " + thumbID,
+                    'class': "thumb" + (index === firstImageIndex ? " thumb-active" : "") + " " + thumbID,
                     'src': PREFIX + known[v]['thumb']});
             img.on('click', function (e) {
                 let selectedThumb = e.target;
@@ -219,7 +220,7 @@ $(document).ready(function () {
             });
             $('.image-selector').append(img);
         });
-        showImgAndUpdateUI(order[0], false);
+        showImgAndUpdateUI(order[firstImageIndex], false);
     }
 });
 
