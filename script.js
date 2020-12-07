@@ -187,7 +187,7 @@ $(document).ready(function () {
     $("#left-img").append($("<img>", {"id": "left"}));
     // Setup slider and load first image.
     if ($(".comparison-slider")[0]) {
-        let firstImageIndex = Math.floor(Math.random() * order.length)
+        let firstImageIndex = 1
         let compSlider = $(".comparison-slider");
         compSlider.each(function () {
             let compSliderWidth = $(this).width() + "px";
